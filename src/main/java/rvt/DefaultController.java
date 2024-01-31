@@ -8,6 +8,15 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class DefaultController {
+
+    /*public static int smallest(int[] int Arr) {
+        int smallest = intArr[0];
+        for (int)
+        }
+        return smallest;
+    }
+    */
+    
     
    @GetMapping(value = "/")
     String index(@RequestParam(name="name", required=false, defaultValue="null") String name, Model model) {
@@ -22,7 +31,5 @@ public class DefaultController {
     public ModelAndView about(){
         ModelAndView modelAndView = new ModelAndView("about");
         return modelAndView;
-    }
-    
-    
+    }  
 }
